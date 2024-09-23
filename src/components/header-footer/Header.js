@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { AppBar, Toolbar, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SideDrawer from "./SideDrawer";
 
 const Header = () => {
+
+    const [drawerOpen, setDrawerOpen] = useState(false)
+
+    const  toggleDrawer = (value)=>{
+        setDrawerOpen(value);
+    } 
     return (
         <AppBar
             position='fixed'
@@ -22,9 +28,14 @@ const Header = () => {
                 </div>
                 <IconButton
                     aria-lable="Menu"
-                    color='inherit'>
+                    color='inherit'
+                    onClick={()=> toggleDrawer(true)}>  
                     <MenuIcon />
                 </IconButton>
+                <SideDrawer
+                 open={drawerOpen}
+                 close={(value)=>toggleDrawer(value)}
+                ></SideDrawer>
             </Toolbar>
         </AppBar>
     )
