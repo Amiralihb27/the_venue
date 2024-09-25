@@ -45,7 +45,7 @@ const TimeUntil = () => {
         setInterval(() => getTimeUntil('September,26,2024,01:20:00'), 1000)
     }, [getTimeUntil])
     return (
-        <Slide left delay={1000}>
+        <Slide left delay={400}>
             <div className='countdown_wrapper'>
                 <div className='countdown_top'>
                     Event starts in

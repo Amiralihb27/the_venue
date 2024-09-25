@@ -33,6 +33,14 @@ body {
     background: #ffa800;
 }
 
+.bck_special{
+    background: linear-gradient(91deg, rgba(117,114,95,1) 0%, rgba(108,109,95,1) 99%);
+}
+
+.bck_yellow_special{
+    background: #927740;
+}
+
 .iconImage {
     width: 20px;
     margin-right: 10px;
@@ -134,7 +142,7 @@ footer .footer_copyright {
 }
 
 .countdown_wrapper .countdown_top {
-    background: linear-gradient(90deg, rgba(22,100,102,1) 21%, rgba(30,180,200,1) 83%);
+    background: linear-gradient(82deg, rgba(24,25,20,1) 0%, rgba(16,17,14,1) 98%);
     font-size: 19px;
     padding: 10px;
     display: inline-block;
@@ -143,7 +151,8 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_bottom {
     display: flex;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(36, 164, 142, 1) 21%, rgba(48, 125, 176, 1) 86%);
+    background: linear-gradient(91deg, rgba(117,114,95,1) 0%, rgba(108,109,95,1) 99%);
+
     padding: 10px 20px;
 }
 
@@ -219,6 +228,7 @@ footer .footer_copyright {
 }
 
 .vn_item .vn_title {
+    user-select: none;
     font-size: 28px;
     margin: 90px 0px 20px 0px;
     border-bottom: 1px solid #5d5d5d;
@@ -226,6 +236,7 @@ footer .footer_copyright {
 }
 
 .vn_item .vn_desc {
+    user-select: none;
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 90px;
