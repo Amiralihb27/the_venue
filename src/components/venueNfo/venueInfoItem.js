@@ -1,22 +1,22 @@
 import React from 'react';
 import { Zoom } from 'react-awesome-reveal';
 
-const VenueInfoItem = ({ backgroundClass, icon, title, description }) => {
+const VenueInfoItem = (props) => {
     return (
         <Zoom className='vn_item'>
             <div>
                 <div className='vn_outer'>
                     <div className='vn_inner'>
-                        <div className={`vn_icon_square ${backgroundClass}`}></div>
+                        <div className={`vn_icon_square ${props.backgroundClass}`}></div>
                         <div
                             className='vn_icon'
-                            style={{ background: `url(${icon})` }}
+                            style={{ background: `url(${props.icon})` }}
                         ></div>
                         <div className='vn_title'>
-                            {title}
+                            {props.title}
                         </div>
                         <div className='vn_desc'>
-                            {description}
+                            {props.description}
                         </div>
                     </div>
                 </div>
