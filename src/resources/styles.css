@@ -51,6 +51,11 @@ body {
     margin: 0 auto;
 }
 
+.user_selection{
+    user-select: none;
+    /* wrote by me */
+}
+
 
 /*====================
         HEADER

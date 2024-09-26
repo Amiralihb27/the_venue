@@ -1,6 +1,7 @@
 import React from 'react';
-import { Drawer, List, ListItem } from '@mui/material'
+import { Drawer, duration, List, ListItem } from '@mui/material'
 import { Draw } from '@mui/icons-material';
+import { scroller } from 'react-scroll';
 
 
 const SideDrawer = (props) => {
@@ -9,11 +10,23 @@ const SideDrawer = (props) => {
         { where: 'featured', value: 'to The top' },
         { where: 'venuInfo', value: 'Venue Info' },
         { where: 'highlights', value: 'Highlights' },
+        { where: 'pricing', value: 'Pricing' },
         { where: 'location', value: 'Location' }
     ]
 
+    const scrollToElement = (element)=>{
+        scroller.scrollTo(element,{
+            duration:1500,
+            dalay:500,
+            smooth:true,
+            offset:-150
+        });
+        props.close(false);
+
+    }
+
     function renderItems(item) {
-        return <ListItem button onClick={() => alert(item.value)} key={item.where}>{item.value} </ListItem>
+        return <ListItem className='user_selection' button onClick={() => scrollToElement(item.where)} key={item.where}>{item.value} </ListItem>
     }
     return (
         <Drawer
