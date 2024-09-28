@@ -41,6 +41,10 @@ body {
     background: #927740;
 }
 
+.bck_footer_color{
+    background: rgb(39, 166, 189);
+}
+
 .iconImage {
     width: 20px;
     margin-right: 10px;
@@ -88,7 +92,7 @@ footer {
     text-align: center;
     font-size: 60px;
     color: #ffffff;
-    background: red;
+    background: rgb(39, 166, 189);
 }
 
 footer .footer_copyright {

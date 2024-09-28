@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Footer = () =>{
     return (
-       <footer className='bck_red'>
+       <footer className='bck_footer_color'>
 
        {/* <Fade triggerOnce ></Fade> */}
        {/* the animation happens only once . at the first trigger */}
