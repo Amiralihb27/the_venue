@@ -32,11 +32,19 @@ const SideDrawer = (props) => {
         <Drawer
             anchor='right'
             open={props.open}
-            onClose={() => props.close(false)}>
+            onClose={() => props.close(false)}
+            sx={{
+                '& .MuiDrawer-paper': {
+                    backgroundColor: '#252525', 
+                    color:'#fff',
+                     overflowX: 'hidden'
+                }
+            }}
+            //change the colors later
+        >
             <List component="nav">
                 {listItems.map((item) => renderItems(item))}
             </List>
-
         </Drawer>
     )
 }

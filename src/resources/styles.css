@@ -3,6 +3,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* Optional: hide the scrollbar track */
 }
 
 .app {
@@ -63,9 +69,15 @@ body {
 
 .listItems {
     border-bottom: 2px solid rgba(108, 109, 95, 1);
-    margin: 7px 2px;
+    margin: 10px 5px;
     padding: 10px;
+    
 
+}
+
+.listItems:hover{
+    background-color: #555 !important;
+    cursor: pointer;
 }
 
 
