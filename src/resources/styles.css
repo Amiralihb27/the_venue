@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .app {
@@ -33,15 +34,15 @@ body {
     background: #ffa800;
 }
 
-.bck_special{
-    background: linear-gradient(91deg, rgba(117,114,95,1) 0%, rgba(108,109,95,1) 99%);
+.bck_special {
+    background: linear-gradient(91deg, rgba(117, 114, 95, 1) 0%, rgba(108, 109, 95, 1) 99%);
 }
 
-.bck_yellow_special{
+.bck_yellow_special {
     background: #927740;
 }
 
-.bck_footer_color{
+.bck_footer_color {
     background: rgb(39, 166, 189);
 }
 
@@ -55,9 +56,16 @@ body {
     margin: 0 auto;
 }
 
-.user_selection{
+.user_selection {
     user-select: none;
     /* wrote by me */
+}
+
+.listItems {
+    border-bottom: 2px solid rgba(108, 109, 95, 1);
+    margin: 7px 2px;
+    padding: 10px;
+
 }
 
 
@@ -151,7 +159,7 @@ footer .footer_copyright {
 }
 
 .countdown_wrapper .countdown_top {
-    background: linear-gradient(82deg, rgba(24,25,20,1) 0%, rgba(16,17,14,1) 98%);
+    background: linear-gradient(82deg, rgba(24, 25, 20, 1) 0%, rgba(16, 17, 14, 1) 98%);
     font-size: 19px;
     padding: 10px;
     display: inline-block;
@@ -160,7 +168,7 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_bottom {
     display: flex;
-    background: linear-gradient(91deg, rgba(117,114,95,1) 0%, rgba(108,109,95,1) 99%);
+    background: linear-gradient(91deg, rgba(117, 114, 95, 1) 0%, rgba(108, 109, 95, 1) 99%);
 
     padding: 10px 20px;
 }
@@ -320,9 +328,12 @@ footer .footer_copyright {
 }
 
 .custom-button:hover {
-    background-color: #0d47a1; /* Change the background color on hover */
-    transform: scale(1.05); /* Slightly increase size */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    background-color: #0d47a1;
+    /* Change the background color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect */
 }
 
 

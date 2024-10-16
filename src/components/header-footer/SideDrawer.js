@@ -14,19 +14,19 @@ const SideDrawer = (props) => {
         { where: 'location', value: 'Location' }
     ]
 
-    const scrollToElement = (element)=>{
-        scroller.scrollTo(element,{
-            duration:1500,
-            dalay:500,
-            smooth:true,
-            offset:-150
+    const scrollToElement = (element) => {
+        scroller.scrollTo(element, {
+            duration: 1500,
+            dalay: 500,
+            smooth: true,
+            offset: -150
         });
         props.close(false);
 
     }
 
     function renderItems(item) {
-        return <ListItem className='user_selection' button onClick={() => scrollToElement(item.where)} key={item.where}>{item.value} </ListItem>
+        return <ListItem className='user_selection listItems' button onClick={() => scrollToElement(item.where)} key={item.where}>{item.value} </ListItem>
     }
     return (
         <Drawer
